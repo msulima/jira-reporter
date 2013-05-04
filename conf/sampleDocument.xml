@@ -1,0 +1,1109 @@
+<rss version="0.92">
+    <channel>
+        <title>foobar.jira.com</title>
+        <issue start="0" end="1000" total="1481"/>
+
+        <item>
+            <title>[FOOBAR-123] Task title</title>
+            <key id="12282">FOOBAR-123</key>
+            <created>Sat, 3 Sep 2011 10:36:34 +0200</created>
+            <resolved>Tue, 6 Sep 2011 15:58:37 +0200</resolved>
+            <fixVersion>Iteration 21</fixVersion>
+            <timeoriginalestimate seconds="28800">1 day</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="45000">1 day, 4 hours, 30 minutes</timespent>
+        </item>
+
+        <item>
+            <title>[FOOBAR-456] Unresolved task without time spent</title>
+            <key id="12282">FOOBAR-456</key>
+            <created>Sat, 3 Sep 2011 10:36:34 +0200</created>
+            <fixVersion>Iteration 21</fixVersion>
+            <timeoriginalestimate seconds="28800">1 day</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+        </item>
+
+
+        <item>
+            <title>[PKNCMS-850] Fix &quot;Maximum call stack size exceeded&quot; bug that occurs when trying to modify
+                association
+            </title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-850</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment>&lt;p&gt;LILLE &lt;img class=&quot;emoticon&quot; src=&quot;https://futureprocessing.jira.com/images/icons/emoticons/check.gif&quot;
+                height=&quot;16&quot; width=&quot;16&quot; align=&quot;absmiddle&quot; alt=&quot;&quot; border=&quot;0&quot;/&gt;
+                ANGERS &lt;img class=&quot;emoticon&quot; src=&quot;https://futureprocessing.jira.com/images/icons/emoticons/forbidden.gif&quot;
+                height=&quot;16&quot; width=&quot;16&quot; align=&quot;absmiddle&quot; alt=&quot;&quot; border=&quot;0&quot;/&gt;
+                REIMS &lt;img class=&quot;emoticon&quot; src=&quot;https://futureprocessing.jira.com/images/icons/emoticons/forbidden.gif&quot;
+                height=&quot;16&quot; width=&quot;16&quot; align=&quot;absmiddle&quot; alt=&quot;&quot; border=&quot;0&quot;/&gt;&lt;/p&gt;</environment>
+            <key id="12698">PKNCMS-850</key>
+            <summary>Fix &quot;Maximum call stack size exceeded&quot; bug that occurs when trying to modify
+                association
+            </summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="6">Verified</resolution>
+            <assignee username="tkus">Tomasz Kus</assignee>
+            <reporter username="tkus">Tomasz Kus</reporter>
+            <labels>
+                <label>GUI</label>
+            </labels>
+            <created>Wed, 23 Nov 2011 12:04:00 +0100</created>
+            <updated>Wed, 30 Nov 2011 16:28:23 +0100</updated>
+            <resolved>Mon, 28 Nov 2011 13:35:35 +0100</resolved>
+            <fixVersion>Iteration 26</fixVersion>
+            <component>GUI</component>
+            <due>Fri, 25 Nov 2011 00:00:00 +0100</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="10800">3 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="10800">3 hours</timespent>
+            <comments>
+                <comment id="12293" author="tkus" created="Wed, 23 Nov 2011 14:52:20 +0100">&lt;p&gt;Please verify if
+                    bug is fixed, and everthing else is OK in Association Modification Window.&lt;/p&gt;</comment>
+                <comment id="12324" author="ljarosinski" created="Mon, 28 Nov 2011 13:35:35 +0100">&lt;p&gt;Verified on
+                    GF deployed staging app. Works without any problem, no stack size overflow
+                    occured.&lt;/p&gt;</comment>
+            </comments>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Wed, 30 Nov 2011 16:28:00 +0100</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>639</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3554</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10002" key="com.atlassian.jira.ext.charting:firstresponsedate">
+                    <customfieldname>[CHART] Date of First Response</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Mon, 28 Nov 2011 13:35:35 +0100</customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-831] Analyse old product removal impact on ESB and propose some solutions for the french
+                guys
+            </title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-831</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment>&lt;p&gt;Lille &lt;img class=&quot;emoticon&quot; src=&quot;https://futureprocessing.jira.com/images/icons/emoticons/check.gif&quot;
+                height=&quot;16&quot; width=&quot;16&quot; align=&quot;absmiddle&quot; alt=&quot;&quot; border=&quot;0&quot;/&gt;&lt;br/&gt;
+                Angers &lt;img class=&quot;emoticon&quot; src=&quot;https://futureprocessing.jira.com/images/icons/emoticons/forbidden.gif&quot;
+                height=&quot;16&quot; width=&quot;16&quot; align=&quot;absmiddle&quot; alt=&quot;&quot; border=&quot;0&quot;/&gt;&lt;br/&gt;
+                Reims &lt;img class=&quot;emoticon&quot; src=&quot;https://futureprocessing.jira.com/images/icons/emoticons/forbidden.gif&quot;
+                height=&quot;16&quot; width=&quot;16&quot; align=&quot;absmiddle&quot; alt=&quot;&quot; border=&quot;0&quot;/&gt;&lt;br/&gt;
+                &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/043f&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Confluence
+                Spec&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/kI7f&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Confluence
+                Task&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/Korf&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Confluence
+                Task for old product removal&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;https://mobile.parkeon.com/labs/transfolio/ci-product/view/All/job/ESB-gto/&quot;
+                class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Parkeon Jenkins ESB Build&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="12655">PKNCMS-831</key>
+            <summary>Analyse old product removal impact on ESB and propose some solutions for the french guys</summary>
+            <type id="3" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/task.png">Task</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="1">Fixed</resolution>
+            <assignee username="mmoczulski">Micha&#322; Moczulski</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Wed, 16 Nov 2011 15:31:00 +0100</created>
+            <updated>Thu, 17 Nov 2011 07:49:37 +0100</updated>
+            <resolved>Thu, 17 Nov 2011 07:37:07 +0100</resolved>
+            <fixVersion>Iteration 26</fixVersion>
+            <component>Development</component>
+            <due>Thu, 17 Nov 2011 00:00:00 +0100</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="7200">2 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="1800">30 minutes</timespent>
+            <comments>
+                <comment id="12268" author="mmoczulski" created="Thu, 17 Nov 2011 07:37:07 +0100">&lt;p&gt;Nothing
+                    really to do here. You may &lt;a href=&quot;https://mobile.parkeon.com/labs/transfolio/ci-product/job/ESB-gto/ws/trunk/external/external-cms/src/main/java/com/parkeon/transfolio/esb/external/cms/CardManagementExternalImpl.java&quot;
+                    class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;download the file&lt;/a&gt;.&lt;br/&gt;
+                    The only thing to do.. is to remove many lines.. from &lt;tt&gt;logCmsCardImage&lt;/tt&gt; method.
+                    This method only logs into Logger whole &lt;tt&gt;CardImage&lt;/tt&gt; object with its products.&lt;/p&gt;</comment>
+            </comments>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Thu, 17 Nov 2011 07:49:00 +0100</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>595</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3579</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10002" key="com.atlassian.jira.ext.charting:firstresponsedate">
+                    <customfieldname>[CHART] Date of First Response</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Thu, 17 Nov 2011 07:37:07 +0100</customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-293] Reims 1.1 - improve performance of getCustomers</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-293</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment></environment>
+            <key id="11160">PKNCMS-293</key>
+            <summary>Reims 1.1 - improve performance of getCustomers</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="1">Fixed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Tue, 15 Mar 2011 10:14:54 +0100</created>
+            <updated>Thu, 17 Mar 2011 09:50:33 +0100</updated>
+            <resolved>Thu, 17 Mar 2011 09:50:25 +0100</resolved>
+            <fixVersion>Iteration 11</fixVersion>
+            <component>Development</component>
+            <due>Mon, 28 Mar 2011 00:00:00 +0200</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="0">0 minutes</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Thu, 17 Mar 2011 09:50:00 +0100</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4582</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3639</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-290] CardPresentation with JourneyWaypoint importers are generating invalid SQLs</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-290</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment></environment>
+            <key id="11157">PKNCMS-290</key>
+            <summary>CardPresentation with JourneyWaypoint importers are generating invalid SQLs</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="7">Reviewed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Mon, 14 Mar 2011 16:16:24 +0100</created>
+            <updated>Fri, 8 Apr 2011 17:08:45 +0200</updated>
+            <resolved>Fri, 8 Apr 2011 17:08:38 +0200</resolved>
+            <fixVersion>Iteration 11</fixVersion>
+            <component>Development</component>
+            <due>Tue, 15 Mar 2011 00:00:00 +0100</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="28800">1 day</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="57600">2 days</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Fri, 8 Apr 2011 17:08:00 +0200</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4583</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3642</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-275] Liquibase scripts for 1.0 Reims are invalid</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-275</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment></environment>
+            <key id="11135">PKNCMS-275</key>
+            <summary>Liquibase scripts for 1.0 Reims are invalid</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="1">Fixed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Thu, 10 Mar 2011 11:50:40 +0100</created>
+            <updated>Tue, 15 Mar 2011 09:17:28 +0100</updated>
+            <resolved>Thu, 10 Mar 2011 15:49:52 +0100</resolved>
+            <version>Iteration 10</version>
+            <version>Iteration 11</version>
+            <fixVersion>Iteration 11</fixVersion>
+            <component>Development</component>
+            <due>Fri, 11 Mar 2011 00:00:00 +0100</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="3600">1 hour</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="7200">2 hours</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Tue, 15 Mar 2011 09:17:00 +0100</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4584</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3646</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-274] Trac Ticket 1437 - Online client creation fails</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-274</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description>&lt;p&gt;We have another blocker bug on online client creation -&amp;gt; #1437&lt;/p&gt;
+
+                &lt;p&gt;A fix for this one is really urgent.&lt;/p&gt;
+
+                &lt;p&gt;As usually, there are no logs attached. I&apos;ll send you some this
+                afternoon.&lt;/p&gt;</description>
+            <environment>&lt;p&gt;Trac: &lt;a href=&quot;https://rd.parkeon.com/etrac/Transfolio/ticket/1437&quot;
+                class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;https://rd.parkeon.com/etrac/Transfolio/ticket/1437&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="11134">PKNCMS-274</key>
+            <summary>Trac Ticket 1437 - Online client creation fails</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="1">Fixed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Thu, 10 Mar 2011 11:46:04 +0100</created>
+            <updated>Tue, 15 Mar 2011 10:17:07 +0100</updated>
+            <resolved>Sun, 13 Mar 2011 14:35:17 +0100</resolved>
+            <version>Iteration 10</version>
+            <version>Iteration 11</version>
+            <fixVersion>Iteration 11</fixVersion>
+            <component>Development</component>
+            <due>Fri, 11 Mar 2011 00:00:00 +0100</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="28800">1 day</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="7200">2 hours</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Tue, 15 Mar 2011 10:17:00 +0100</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4585</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3648</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+
+        <item>
+            <title>[PKNCMS-267] Trac Ticket 1438 - Problems with Town and PostCode</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-267</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment>&lt;p&gt;Trac: &lt;a href=&quot;https://rd.parkeon.com/etrac/Transfolio/ticket/1438&quot;
+                class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;https://rd.parkeon.com/etrac/Transfolio/ticket/1438&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="11127">PKNCMS-267</key>
+            <summary>Trac Ticket 1438 - Problems with Town and PostCode</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="1">Fixed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Wed, 9 Mar 2011 20:45:26 +0100</created>
+            <updated>Tue, 15 Mar 2011 10:15:38 +0100</updated>
+            <resolved>Thu, 10 Mar 2011 12:53:39 +0100</resolved>
+            <version>Iteration 10</version>
+            <version>Iteration 11</version>
+            <fixVersion>Iteration 11</fixVersion>
+            <component>Development</component>
+            <due>Fri, 11 Mar 2011 00:00:00 +0100</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="43200">1 day, 4 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="14400">4 hours</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Tue, 15 Mar 2011 10:15:00 +0100</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4586</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3649</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-468] GetProductSales returns 0 as Sales Agent</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-468</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description>&lt;div class=&quot;panel&quot; style=&quot;border-width: 1px;&quot;&gt;&lt;div class=&quot;panelContent&quot;&gt;
+                &lt;p&gt;We&apos;ve got an issue on Reims Project. When TOM calls for GetProductSales method, salesAgent
+                in TopUp in TopUpList is always returned with value 0. Can you have a look at that ?&lt;/p&gt;
+
+
+                &lt;p&gt;If you need more information, don&apos;t hesitate to ask me.&lt;/p&gt;
+
+
+                &lt;p&gt;It would be great to resolve it today. I know it&apos;s quite short.&lt;/p&gt;
+                &lt;/div&gt;&lt;/div&gt;</description>
+            <environment></environment>
+            <key id="11492">PKNCMS-468</key>
+            <summary>GetProductSales returns 0 as Sales Agent</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="2">Won&apos;t Fix</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="mmoczulski">Micha&#322; Moczulski</reporter>
+            <labels>
+            </labels>
+            <created>Tue, 21 Jun 2011 06:38:42 +0200</created>
+            <updated>Wed, 22 Jun 2011 06:57:03 +0200</updated>
+            <resolved>Tue, 21 Jun 2011 20:06:00 +0200</resolved>
+            <fixVersion>Iteration 16</fixVersion>
+            <component>Development</component>
+            <due>Tue, 21 Jun 2011 00:00:00 +0200</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="18000">5 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="14400">4 hours</timespent>
+            <comments>
+                <comment id="11154" author="mmoczulski" created="Tue, 21 Jun 2011 20:06:01 +0200">&lt;p&gt;There is no
+                    problem on CMS side - it&apos;s ESB.. as usual&lt;/p&gt;</comment>
+            </comments>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4587</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3705</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-448] Reims Ticket 1495 - The validity start date of period products is no longer displayed.
+                Regression.
+            </title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-448</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description>&lt;p&gt;Fix for Reims as top priority, but also check Angers and Product later, and synchro
+                the fix.&lt;/p&gt;</description>
+            <environment>&lt;p&gt;&lt;a href=&quot;https://rd.parkeon.com/etrac/Transfolio/ticket/1495&quot; class=&quot;external-link&quot;
+                rel=&quot;nofollow&quot;&gt;Reims Trac Ticket #1495&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/34Bz&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Confluence
+                with discussion&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/6oBz&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Confluence
+                for this task&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="11469">PKNCMS-448</key>
+            <summary>Reims Ticket 1495 - The validity start date of period products is no longer displayed.
+                Regression.
+            </summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="7">Reviewed</resolution>
+            <assignee username="ljarosinski">&#321;ukasz Jarosi&#324;ski</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Wed, 15 Jun 2011 19:39:02 +0200</created>
+            <updated>Fri, 17 Jun 2011 12:54:12 +0200</updated>
+            <resolved>Fri, 17 Jun 2011 12:53:54 +0200</resolved>
+            <fixVersion>Iteration 15</fixVersion>
+            <component>Development</component>
+            <due>Fri, 17 Jun 2011 00:00:00 +0200</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="14400">4 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="19800">5 hours, 30 minutes</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Fri, 17 Jun 2011 12:54:00 +0200</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4588</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3717</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-447] Product Ticket 85, Reims 1402 and do not forget Angers - Anon cards are not returned by
+                search. Criteria for customer sur and forename is too strong.
+            </title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-447</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description>&lt;p&gt;Fix on all 3 branches: Reims top priority, Angers second, Product
+                last.&lt;/p&gt;</description>
+            <environment>&lt;p&gt;&lt;a href=&quot;https://rd.parkeon.com/etrac/Transfolio/ticket/1402&quot; class=&quot;external-link&quot;
+                rel=&quot;nofollow&quot;&gt;Reims Trac Ticket #1402&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;https://rd.parkeon.com/etrac/TransfolioProduct/ticket/85&quot; class=&quot;external-link&quot;
+                rel=&quot;nofollow&quot;&gt;Product Trac Ticket #85&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/34Bz&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Confluence
+                with discussion&lt;/a&gt;&lt;br/&gt;
+                &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/4YBz&quot; class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;Confluence
+                for this task&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="11468">PKNCMS-447</key>
+            <summary>Product Ticket 85, Reims 1402 and do not forget Angers - Anon cards are not returned by search.
+                Criteria for customer sur and forename is too strong.
+            </summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="7">Reviewed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Wed, 15 Jun 2011 19:18:39 +0200</created>
+            <updated>Mon, 20 Jun 2011 11:28:28 +0200</updated>
+            <resolved>Mon, 20 Jun 2011 11:27:43 +0200</resolved>
+            <fixVersion>Iteration 15</fixVersion>
+            <component>Development</component>
+            <due>Fri, 17 Jun 2011 00:00:00 +0200</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="28800">1 day</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="54000">1 day, 7 hours</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4589</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3719</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-1030] cardDuplicated method is not processing NOT_REGISTERED cards</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-1030</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment>&lt;p&gt;&lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/tgLo&quot; class=&quot;external-link&quot;
+                rel=&quot;nofollow&quot;&gt;Confluence Task&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="13146">PKNCMS-1030</key>
+            <summary>cardDuplicated method is not processing NOT_REGISTERED cards</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="7">Reviewed</resolution>
+            <assignee username="tpindel">Tomasz Pindel</assignee>
+            <reporter username="tpindel">Tomasz Pindel</reporter>
+            <labels>
+            </labels>
+            <created>Thu, 16 Feb 2012 18:23:21 +0100</created>
+            <updated>Fri, 17 Feb 2012 13:50:17 +0100</updated>
+            <resolved>Fri, 17 Feb 2012 12:16:00 +0100</resolved>
+            <fixVersion>Iteration 31</fixVersion>
+            <component>Development</component>
+            <due></due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="14400">4 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="16200">4 hours, 30 minutes</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>972</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3770</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-583] Can&apos;t view complaint details</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-583</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description>&lt;p&gt;Web browser freezes when trying to view complaint details. Tested on FF and chrome.&lt;/p&gt;</description>
+            <environment>&lt;p&gt;LILLE&lt;/p&gt;</environment>
+            <key id="12248">PKNCMS-583</key>
+            <summary>Can&apos;t view complaint details</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="7">Reviewed</resolution>
+            <assignee username="ljarosinski">&#321;ukasz Jarosi&#324;ski</assignee>
+            <reporter username="ljarosinski">&#321;ukasz Jarosi&#324;ski</reporter>
+            <labels>
+                <label>GUI</label>
+            </labels>
+            <created>Wed, 31 Aug 2011 12:39:10 +0200</created>
+            <updated>Thu, 1 Sep 2011 18:34:43 +0200</updated>
+            <resolved>Thu, 1 Sep 2011 10:41:30 +0200</resolved>
+            <fixVersion>Improvements</fixVersion>
+            <fixVersion>Iteration 20</fixVersion>
+            <component>GUI</component>
+            <due></due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="2700">45 minutes</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="2700">45 minutes</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Thu, 1 Sep 2011 18:34:00 +0200</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>62</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3311</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-162] Trac Ticket 1252 - Still not working correctly - create bypass for many Transactions
+                with same date in one SalesSession
+            </title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-162</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment>&lt;p&gt;Confluence: &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/k4BB&quot; class=&quot;external-link&quot;
+                rel=&quot;nofollow&quot;&gt;http://futureprocessing.jira.com/wiki/x/k4BB&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="10746">PKNCMS-162</key>
+            <summary>Trac Ticket 1252 - Still not working correctly - create bypass for many Transactions with same date
+                in one SalesSession
+            </summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="7">Reviewed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Tue, 14 Dec 2010 19:40:33 +0100</created>
+            <updated>Fri, 17 Dec 2010 10:44:05 +0100</updated>
+            <resolved>Fri, 17 Dec 2010 10:43:58 +0100</resolved>
+            <fixVersion>Iteration 9</fixVersion>
+            <component>Development</component>
+            <due>Wed, 15 Dec 2010 00:00:00 +0100</due>
+            <votes>0</votes>
+            <watches>1</watches>
+            <timeoriginalestimate seconds="28800">1 day</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="21600">6 hours</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10030" key="com.atlassian.jira.plugin.system.customfieldtypes:datetime">
+                    <customfieldname>Date Closed</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>Fri, 17 Dec 2010 10:44:00 +0100</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4590</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3910</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-90] Trac Ticket 1163 - One CardPresentation for many CardUpdates in one Transaction</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-90</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment>&lt;p&gt;cms-server&lt;br/&gt;
+                Trac: &lt;a href=&quot;https://rd.parkeon.com/etrac/Transfolio/ticket/1163&quot; class=&quot;external-link&quot;
+                rel=&quot;nofollow&quot;&gt;https://rd.parkeon.com/etrac/Transfolio/ticket/1163&lt;/a&gt;&lt;br/&gt;
+                Confluence: &lt;a href=&quot;http://futureprocessing.jira.com/wiki/x/K4Ev&quot; class=&quot;external-link&quot;
+                rel=&quot;nofollow&quot;&gt;http://futureprocessing.jira.com/wiki/x/K4Ev&lt;/a&gt;&lt;/p&gt;</environment>
+            <key id="10483">PKNCMS-90</key>
+            <summary>Trac Ticket 1163 - One CardPresentation for many CardUpdates in one Transaction</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="1">Fixed</resolution>
+            <assignee username="mmoczulski">Micha&#322; Moczulski</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Wed, 13 Oct 2010 14:06:52 +0200</created>
+            <updated>Mon, 25 Oct 2010 17:22:13 +0200</updated>
+            <resolved>Mon, 25 Oct 2010 17:22:13 +0200</resolved>
+            <version>Iteration 6</version>
+            <version>Stabilisation before FAT October 2010</version>
+            <fixVersion>FAT October 2010</fixVersion>
+            <component>Development</component>
+            <due>Fri, 15 Oct 2010 00:00:00 +0200</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="7200">2 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="25200">7 hours</timespent>
+            <comments>
+                <comment id="10287" author="plenza" created="Thu, 21 Oct 2010 13:29:46 +0200">&lt;p&gt;Daj&#281; Reopen
+                    - drobne popraweczki po CR: &lt;a href=&quot;http://futureprocessing.jira.com/source/cru/CR-PKNCMS-35&quot;
+                    class=&quot;external-link&quot; rel=&quot;nofollow&quot;&gt;http://futureprocessing.jira.com/source/cru/CR-PKNCMS-35&lt;/a&gt;&lt;/p&gt;</comment>
+            </comments>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4591</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3939</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+        <item>
+            <title>[PKNCMS-78] Trac Ticket 774 - JTA compliance</title>
+            <link>https://futureprocessing.jira.com/browse/PKNCMS-78</link>
+            <project id="10022" key="PKNCMS">Parkeon - CMS</project>
+            <description></description>
+            <environment>&lt;p&gt;cms-server&lt;/p&gt;</environment>
+            <key id="10349">PKNCMS-78</key>
+            <summary>Trac Ticket 774 - JTA compliance</summary>
+            <type id="1" iconUrl="https://futureprocessing.jira.com/images/icons/issuetypes/bug.png">Bug</type>
+            <priority id="1" iconUrl="https://futureprocessing.jira.com/images/icons/priorities/blocker.png">Blocker
+            </priority>
+            <status id="6" iconUrl="https://futureprocessing.jira.com/images/icons/statuses/closed.png">Closed</status>
+            <resolution id="1">Fixed</resolution>
+            <assignee username="plenza">Patryk Lenza</assignee>
+            <reporter username="plenza">Patryk Lenza</reporter>
+            <labels>
+            </labels>
+            <created>Fri, 1 Oct 2010 12:01:10 +0200</created>
+            <updated>Tue, 19 Oct 2010 15:17:19 +0200</updated>
+            <resolved>Tue, 19 Oct 2010 15:17:10 +0200</resolved>
+            <version>Iteration 6</version>
+            <fixVersion>FAT October 2010</fixVersion>
+            <component>Development</component>
+            <due>Fri, 1 Oct 2010 00:00:00 +0200</due>
+            <votes>0</votes>
+            <watches>0</watches>
+            <timeoriginalestimate seconds="7200">2 hours</timeoriginalestimate>
+            <timeestimate seconds="0">0 minutes</timeestimate>
+            <timespent seconds="7200">2 hours</timespent>
+            <attachments>
+            </attachments>
+            <subtasks>
+            </subtasks>
+            <customfields>
+                <customfield id="customfield_10040" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Global Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>4592</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10140" key="com.pyxis.greenhopper.jira:gh-global-rank">
+                    <customfieldname>Rank</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue>3962</customfieldvalue>
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10241" key="com.atlassian.bonfire.plugin:bonfire-testing-status-cft">
+                    <customfieldname>Testing Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+                <customfield id="customfield_10000" key="com.atlassian.jira.ext.charting:timeinstatus">
+                    <customfieldname>[CHART] Time in Status</customfieldname>
+                    <customfieldvalues>
+
+                    </customfieldvalues>
+                </customfield>
+            </customfields>
+        </item>
+
+    </channel>
+</rss>

@@ -19,5 +19,19 @@
     </div>
 </div>
 
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="@routes.Assets.at("javascript/Chart.js")"></script>
+
+<script type="text/javascript">
+$(function () {
+    var ctx = $("#myChart").get(0).getContext("2d");
+    var myNewChart = new Chart(ctx);
+
+    $.get("@routes.Application.getChart").success(function(data) {
+        myNewChart.Line(data,{});
+    });
+});
+</script>
+
 </body>
 </html>

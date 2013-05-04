@@ -2,7 +2,7 @@ package domain
 
 import support.time.DateTimeOrdering._
 import org.joda.time.{Interval, DateTime}
-import support.time.DaysStream
+import support.time.DaysRange
 
 trait StatisticsEvaluator {
 
@@ -24,10 +24,6 @@ trait StatisticsEvaluator {
   }
 
   private def expandDates(interval: Interval, histogram: Map[DateTime, Int]) =
-    for (day <- DaysStream(interval.getStart) takeWhile isBeforeOrEqual(interval.getEnd))
+    for (day <- DaysRange.fromInterval(interval))
     yield histogram(day)
-
-  def isBeforeOrEqual(end: DateTime): (DateTime) => Boolean = {
-    !_.isAfter(end)
-  }
 }
