@@ -1,0 +1,12 @@
+th.build-status-column {
+    text-align: center !important;
+    width: 100px;
+}
+
+td.build-status-column {
+    text-align: center !important;
+}
+
+td.build-status-column form {
+    margin: 0;
+}

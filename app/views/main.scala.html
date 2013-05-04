@@ -1,0 +1,23 @@
+@(title: String)(content: Html)
+
+<!doctype html>
+<html ng-app="beaconLight">
+<head>
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("bootstrap/css/bootstrap.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+</head>
+<body>
+
+<div class="container-narrow">
+    <div class="container">
+        <div class="page-header">
+            <h1>@title</h1>
+        </div>
+        @content
+    </div>
+</div>
+
+</body>
+</html>
