@@ -7,7 +7,7 @@ import org.scalatest.matchers.ShouldMatchers
 
 class ItemExtractorTest extends FlatSpec with ShouldMatchers {
 
-  private val expectedTitle = "[PKNCMS-605] Task title"
+  private val expectedTitle = "[FOOBAR-605] Task title"
   private val expectedOriginalEstimate = Duration.standardHours(8)
   private val expectedTimeSpent = Some(Duration.standardSeconds(45000))
 

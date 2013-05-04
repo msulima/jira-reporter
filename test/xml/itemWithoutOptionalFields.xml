@@ -1,0 +1,9 @@
+<item>
+    <title>[FOOBAR-605] Task title</title>
+    <key id="12282">FOOBAR-605</key>
+    <created>Sat, 3 Sep 2011 10:36:34 +0200</created>
+    <resolved>Tue, 6 Sep 2011 15:58:37 +0200</resolved>
+    <fixVersion>Iteration 21</fixVersion>
+    <timeoriginalestimate seconds="28800">1 day</timeoriginalestimate>
+    <timeestimate seconds="0">0 minutes</timeestimate>
+</item>
