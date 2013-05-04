@@ -1,13 +1,8 @@
-import domain.{Item, ItemExtractor}
-import org.joda.time.Duration
+import domain.ItemExtractor
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
 
 class ItemExtractorTest extends FlatSpec with ShouldMatchers {
-
-  private val expectedTitle = "[FOOBAR-605] Task title"
-  private val expectedOriginalEstimate = Duration.standardHours(8)
-  private val expectedTimeSpent = Some(Duration.standardSeconds(45000))
 
   behavior of "Item Extractor"
 

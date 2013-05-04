@@ -1,4 +1,4 @@
-package domain
+package support.xml
 
 import org.joda.time.Duration
 import scales.xml._

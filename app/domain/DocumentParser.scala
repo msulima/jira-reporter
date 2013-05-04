@@ -1,6 +1,6 @@
 package domain
 
-import Readers._
+import support.xml.Readers._
 
 import scales.utils._
 import scales.xml._
