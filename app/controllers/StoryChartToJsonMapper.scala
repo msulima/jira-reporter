@@ -5,10 +5,10 @@ import play.api.libs.json.Json
 
 object StoryChartToJsonMapper {
 
-  def asJson(statistics: StoryChart) = {
+  def asJson(statistics: StoryChart, title: String) = {
     Json.obj(
       "axisY" -> Map(
-        "title" -> "Story count"
+        "title" -> title
       ), "data" -> List(
         dataSet(statistics.created, "Created"),
         dataSet(statistics.resolved, "Resolved")

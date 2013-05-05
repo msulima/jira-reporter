@@ -33,13 +33,17 @@ function correctDates(data) {
         });
     });
 }
+    
+function renderChart(id, data) {
+    correctDates(data);
+    var chart = new CanvasJS.Chart(id, data);
+    chart.render();
+};
 
 $(function () {
     $.get("@routes.Application.getChart").success(function(data) {
-        correctDates(data);
-    
-        var chart = new CanvasJS.Chart("chartContainer", data);
-        chart.render();
+        renderChart("storyCount", data.storyCount);
+        renderChart("storyPoints", data.storyPoints);
     });
 });
 </script>
