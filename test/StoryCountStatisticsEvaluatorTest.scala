@@ -12,7 +12,7 @@ class StoryCountStatisticsEvaluatorTest extends FlatSpec with ShouldMatchers {
 
   private val startDate: DateTime = new DateTime(2010, 1, 1, 0, 0)
   private val endDate: DateTime = startDate.plus(Days.ONE)
-  private val item = new Item(null, null, null, created = startDate, resolved = Some(endDate))
+  private val item = new Item(null, null, created = startDate, resolved = Some(endDate))
   private val otherItem = item.copy(created = endDate)
   private val unresolvedItem = item.copy(created = startDate, resolved = None)
 

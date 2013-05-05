@@ -21,7 +21,11 @@ trait StatisticsEvaluator {
   private def groupByDate(dateGetter: (Item) => DateTime)(items: Iterable[Item]) =
     items.groupBy(item => dateGetter(item).withTimeAtStartOfDay())
 
-  protected def createHistogram(dates: Map[DateTime, Iterable[Item]]): Iterable[DataPoint]
+  private def createHistogram(dates: Map[DateTime, Iterable[Item]]) =
+    for ((date, items) <- dates)
+    yield DataPoint(date, evaluateX(items))
+
+  protected def evaluateX(items: Iterable[Item]): Int
 
   private def sort(histogram: Iterable[DataPoint]): SortedSet[DataPoint] =
     SortedSet[DataPoint]() ++ histogram
@@ -29,14 +33,12 @@ trait StatisticsEvaluator {
 
 trait StoryCountStatisticsEvaluator extends StatisticsEvaluator {
 
-  override def createHistogram(dates: Map[DateTime, Iterable[Item]]) =
-    for ((date, items) <- dates)
-    yield DataPoint(date, items.size)
+  override def evaluateX(items: Iterable[Item]) =
+    items.size
 }
 
 trait StoryPointsStatisticsEvaluator extends StatisticsEvaluator {
 
-  override def createHistogram(dates: Map[DateTime, Iterable[Item]]) =
-    for ((date, items) <- dates)
-    yield DataPoint(date, items.foldLeft(0)((a, b) => a + b.originalEstimate.getStandardHours.toInt))
+  def evaluateX(items: Iterable[Item]): Int =
+    items.foldLeft(0)((a, b) => a + b.originalEstimate.map(_.getStandardHours.toInt).getOrElse(0))
 }

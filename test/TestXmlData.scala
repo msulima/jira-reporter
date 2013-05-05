@@ -9,8 +9,7 @@ object TestXmlData {
 
   private val expectedItemTitle = "[FOOBAR-123] Task title"
   private val expectedItemWithoutOptionalsTitle = "[FOOBAR-456] Unresolved task without time spent"
-  private val expectedOriginalEstimate = Duration.standardHours(8)
-  private val expectedTimeSpent = Some(Duration.standardSeconds(45000))
+  private val expectedOriginalEstimate = Some(Duration.standardHours(8))
   private val expectedCreated = DateTime.parse("Sat, 3 Sep 2011 10:36:34 +0200", dateFormatter)
   private val expectedResolved = Some(DateTime.parse("Tue, 6 Sep 2011 15:58:37 +0200", dateFormatter))
 
@@ -18,8 +17,8 @@ object TestXmlData {
   val itemXml = getItem(document, 0)
   val itemWithoutOptionalsXml = getItem(document, 1)
 
-  val item = Item(expectedItemTitle, expectedOriginalEstimate, expectedTimeSpent, expectedCreated, expectedResolved)
-  val itemWithoutOptionals = Item(expectedItemWithoutOptionalsTitle, expectedOriginalEstimate, None, expectedCreated, None)
+  val item = Item(expectedItemTitle, expectedOriginalEstimate, expectedCreated, expectedResolved)
+  val itemWithoutOptionals = Item(expectedItemWithoutOptionalsTitle, None, expectedCreated, None)
   val itemsInDocument = List(item, itemWithoutOptionals)
 
   private def loadResource(path: String) =
