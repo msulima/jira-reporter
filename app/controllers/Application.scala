@@ -1,7 +1,7 @@
 package controllers
 
 import play.api.mvc._
-import domain.{ItemExtractor, DocumentParser, StatisticsEvaluator}
+import domain.{StoryCountStatisticsEvaluator, ItemExtractor, DocumentParser, StatisticsEvaluator}
 import scales.xml._
 import ScalesXml._
 import play.api.Play
@@ -14,7 +14,7 @@ object Application extends Controller {
     Ok(views.html.index("Your new application is ready."))
   }
 
-  val evaluator = new StatisticsEvaluator {}
+  val evaluator = new StoryCountStatisticsEvaluator {}
 
   def getChart = CQRSAction {
     val document = loadResource("sampleDocument.xml")
