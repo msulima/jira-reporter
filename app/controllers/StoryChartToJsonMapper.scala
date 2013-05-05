@@ -1,39 +1,30 @@
 package controllers
 
 import domain.{DataSetOperations, Chart, StoryChart}
-import play.api.libs.json.{JsValue, Json}
-import support.time.DaysRange
+import play.api.libs.json.Json
 
 object StoryChartToJsonMapper {
 
-  private val createdStyle = Map(
-    "fillColor" -> "rgba(220,220,220,0.5)",
-    "strokeColor" -> "rgba(220,220,220,1)",
-    "pointColor" -> "rgba(220,220,220,1)",
-    "pointStrokeColor" -> "#fff"
-  ).mapValues(Json.toJson(_))
-
-  private val resolvedStyle = Map(
-    "fillColor" -> "#E01B6A",
-    "strokeColor" -> "#C20A54",
-    "pointColor" -> "#C20A54",
-    "pointStrokeColor" -> "#E04F89"
-  ).mapValues(Json.toJson(_))
-
   def asJson(statistics: StoryChart) = {
     Json.obj(
-      "labels" -> labels(statistics),
-      "datasets" -> List(
-        dataSet(statistics.created, createdStyle),
-        dataSet(statistics.resolved, resolvedStyle)
+      "axisY" -> Map(
+        "title" -> "Story count"
+      ), "data" -> List(
+        dataSet(statistics.created, "Created"),
+        dataSet(statistics.resolved, "Resolved")
       )
     )
   }
 
-  private def labels(statistics: StoryChart) =
-    for (day <- DaysRange.fromInterval(statistics.interval))
-    yield day.toString("yyyy-MM-dd")
+  private def dataSet(data: Chart.DataSet, legend: String) =
+    Map(
+      "type" -> Json.toJson("line"),
+      "showInLegend" -> Json.toJson(true),
+      "legendText" -> Json.toJson(legend),
+      "dataPoints" -> Json.toJson(dataPoints(data))
+    )
 
-  private def dataSet(data: Chart.DataSet, style: Map[String, JsValue]) =
-    style + ("data" -> Json.toJson(DataSetOperations.cumulateResults(data)))
+  private def dataPoints(data: Chart.DataSet) =
+    for (point <- DataSetOperations.cumulateResults(data).toList)
+    yield Map("x" -> Json.toJson(point.x.getMillis), "y" -> Json.toJson(point.y))
 }

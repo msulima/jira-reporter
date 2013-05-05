@@ -1,29 +1,21 @@
 package domain
 
-import support.time.DateTimeOrdering._
-import org.joda.time.{Interval, DateTime}
-import support.time.DaysRange
+import org.joda.time.DateTime
+import scala.collection.SortedSet
 
 trait StatisticsEvaluator {
 
   def evaluate(items: Iterable[Item]): StoryChart = {
-    val closedByDate = createHistogram(items.map(_.created))
-    val resolvedByDate = createHistogram(items.filter(_.resolved.isDefined).map(_.resolved.get))
+    val closedByDate = sorted(createHistogram(items.map(_.created)))
+    val resolvedByDate = sorted(createHistogram(items.filter(_.resolved.isDefined).map(_.resolved.get)))
 
-    val interval = getMaximumInterval(closedByDate, resolvedByDate)
-
-    StoryChart(interval, expandDates(interval, closedByDate), expandDates(interval, resolvedByDate))
+    StoryChart(created = closedByDate, resolvedByDate)
   }
 
   private def createHistogram(dates: Iterable[DateTime]) =
-    dates.groupBy(_.withTimeAtStartOfDay()).mapValues(_.size).withDefaultValue(0)
+    for ((date, items) <- dates.groupBy(_.withTimeAtStartOfDay()))
+    yield DataPoint(date, items.size)
 
-  private def getMaximumInterval(closedByDate: Map[DateTime, Int], resolvedByDate: Map[DateTime, Int]) = {
-    val allDates = closedByDate.keySet ++ resolvedByDate.keySet
-    new Interval(allDates.min, allDates.max)
-  }
-
-  private def expandDates(interval: Interval, histogram: Map[DateTime, Int]) =
-    for (day <- DaysRange.fromInterval(interval))
-    yield histogram(day)
+  private def sorted(histogram: Iterable[DataPoint]): SortedSet[DataPoint] =
+    SortedSet[DataPoint]() ++ histogram
 }

@@ -6,8 +6,8 @@ object DataSetOperations {
     var sum = 0
     for (i <- results)
     yield {
-      sum += i
-      sum
+      sum += i.y
+      DataPoint(i.x, sum)
     }
   }
 }
