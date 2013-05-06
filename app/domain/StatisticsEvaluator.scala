@@ -16,7 +16,7 @@ trait StatisticsEvaluator {
     filterEstimated andThen groupByDate andThen createHistogram andThen sort
 
   private def filterEstimated = (items: Iterable[Item]) =>
-    items.filter(_.originalEstimate.isDefined)
+    items.filter(_.originalEstimate.isDefined).filter(_.originalEstimate.get.getStandardDays > 0)
 
   private def groupByCreated(items: Iterable[Item]) =
     groupBy(_.created)(items)
@@ -46,5 +46,5 @@ trait StoryCountStatisticsEvaluator extends StatisticsEvaluator {
 trait StoryPointsStatisticsEvaluator extends StatisticsEvaluator {
 
   override def evaluateX(items: Iterable[Item]): Int =
-    items.foldLeft(0)((a, b) => a + b.originalEstimate.map(_.getStandardHours.toInt).getOrElse(0))
+    items.foldLeft(0)((a, b) => a + b.originalEstimate.map(_.getStandardDays.toInt).getOrElse(0))
 }

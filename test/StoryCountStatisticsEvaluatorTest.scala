@@ -17,6 +17,7 @@ class StoryCountStatisticsEvaluatorTest extends FlatSpec with ShouldMatchers {
   private val otherItem = item.copy(created = endDate)
   private val unresolvedItem = item.copy(created = startDate, resolved = None)
   private val nonEstimatedItem = item.copy(originalEstimate = None)
+  private val itemWithLowEstimation = item.copy(originalEstimate = Some(Duration.standardHours(7)))
 
   it should "evaluate statistics of items basing on count of Stories" in {
     val results = evaluator.evaluate(List(item, otherItem, unresolvedItem))
@@ -26,7 +27,7 @@ class StoryCountStatisticsEvaluatorTest extends FlatSpec with ShouldMatchers {
   }
 
   it should "leave out Stories without originalEstimate" in {
-    val results = evaluator.evaluate(List(nonEstimatedItem))
+    val results = evaluator.evaluate(List(nonEstimatedItem, itemWithLowEstimation))
 
     results.created should be(Set())
     results.resolved should be(Set())

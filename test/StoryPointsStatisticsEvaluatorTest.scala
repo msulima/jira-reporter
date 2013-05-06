@@ -14,9 +14,9 @@ class StoryPointsStatisticsEvaluatorTest extends FlatSpec with ShouldMatchers {
   private val endDate: DateTime = startDate.plus(Days.ONE)
 
   private val item = new Item(null, 
-    originalEstimate = Some(Duration.standardHours(1)), created = startDate, resolved = Some(endDate))
-  private val otherItem = item.copy(originalEstimate = Some(Duration.standardHours(3)), created = endDate)
-  private val notEstimatedItem = item.copy(originalEstimate = Some(Duration.standardHours(0)), created = endDate)
+    originalEstimate = Some(Duration.standardDays(1)), created = startDate, resolved = Some(endDate))
+  private val otherItem = item.copy(originalEstimate = Some(Duration.standardDays(3)), created = endDate)
+  private val notEstimatedItem = item.copy(originalEstimate = Some(Duration.standardDays(0)), created = endDate)
   private val unresolvedItem = item.copy(originalEstimate = None, created = startDate, resolved = None)
 
   it should "evaluate statistics of items basing on Stories original estimates" in {
