@@ -1,6 +1,6 @@
 package domain
 
-object DataSetOperations {
+object DataSetCumulator {
 
   def cumulateResults(results: Chart.DataSet): Chart.DataSet = {
     var sum = 0

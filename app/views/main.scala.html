@@ -43,6 +43,7 @@ function renderChart(id, data) {
 $(function () {
     $.get("@routes.Application.getChart").success(function(data) {
         renderChart("storyCount", data.storyCount);
+        renderChart("scaledCountChart", data.scaledCountChart);
         renderChart("storyPoints", data.storyPoints);
     });
 });
